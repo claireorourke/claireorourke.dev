@@ -1,0 +1,77 @@
+/* ─────────────────────────────────────────────────────────────
+   Colors — retro-pastel palette over warm cream.
+   Base ramps first, then semantic aliases. Always reference the
+   semantic aliases in components; reach for base ramps only when
+   building a new semantic token.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+    /* ── Warm neutrals (the paper) ───────────────────────────── */
+    --cream-50: #fdfaf3; /* page background */
+    --cream-100: #f7f1e5; /* sunken / alt sections */
+    --sand-200: #efe6d4; /* hairlines on cream, subtle fills */
+    --sand-300: #e2d6bf; /* stronger borders */
+
+    /* ── Warm ink (the type) ─────────────────────────────────── */
+    --ink-900: #2c2823; /* primary text, retro hard shadows */
+    --ink-700: #4c453b; /* secondary text */
+    --ink-500: #756c5e; /* muted text, captions */
+    --ink-300: #a89e8d; /* disabled, faint */
+
+    /* ── Pastel hues — each a soft tint + a saturated face ───── */
+    --peach-soft: #fbe2d2;
+    --peach: #f6c4a6;
+    --peach-ink: #9a5a37; /* readable text on peach-soft */
+
+    --mint-soft: #dcf1e7;
+    --mint: #b6e2cd;
+    --mint-ink: #2f6f54;
+
+    --butter-soft: #fbf0cc;
+    --butter: #f6e09c;
+    --butter-ink: #8a6c1f;
+
+    --lavender-soft: #ece4f7;
+    --lavender: #d2c3ec;
+    --lavender-ink: #5f4a8c;
+
+    --sky-soft: #dcebf5;
+    --sky: #b1d2e8;
+    --sky-ink: #356183;
+
+    /* ── Accent — toasted coral, the one "loud" colour ───────── */
+    --coral-soft: #f8d2c6;
+    --coral: #e8836b;
+    --coral-strong: #d9694f;
+
+    /* ── Status (kept pastel, never neon) ────────────────────── */
+    --positive: #7fb89a;
+    --positive-soft: #dcf1e7;
+    --caution: #e6b35c;
+    --caution-soft: #fbf0cc;
+    --critical: #d97a64;
+    --critical-soft: #f8d2c6;
+
+    /* ── Semantic aliases ────────────────────────────────────── */
+    --surface-page: var(--cream-50);
+    --surface-card: #fffdf8;
+    --surface-sunken: var(--cream-100);
+    --surface-inverse: var(--ink-900);
+
+    --text-strong: var(--ink-900);
+    --text-body: var(--ink-700);
+    --text-muted: var(--ink-500);
+    --text-faint: var(--ink-300);
+    --text-inverse: var(--cream-50);
+
+    --accent: var(--coral);
+    --accent-hover: var(--coral-strong);
+    --accent-soft: var(--coral-soft);
+    --on-accent: #fffdf8;
+
+    --border: var(--sand-200);
+    --border-strong: var(--sand-300);
+    --border-ink: var(--ink-900);
+
+    --focus-ring: var(--coral);
+}

@@ -1,6 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App.js";
+import "./styles/styles.css";
+import "./styles/site.css";
 
 const rootEl = document.getElementById("root");
 if (rootEl === null) throw new Error("No #root element found");
