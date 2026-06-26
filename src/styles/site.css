@@ -153,6 +153,7 @@
     gap: var(--space-3);
 }
 .cl-footer__copy { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); margin: 0; }
+.cl-footer__icons { display: flex; align-items: center; gap: var(--space-3); }
 .cl-footer__gh {
     color: var(--text-muted);
     text-decoration: none;
