@@ -65,7 +65,7 @@
 }
 .cl-nav__link.is-active {
     color: var(--ink-900);
-    background: var(--butter);
+    background: var(--lavender);
     border: 1.5px solid var(--ink-900);
     padding: calc(0.4rem - 1.5px) calc(0.8rem - 1.5px);
 }

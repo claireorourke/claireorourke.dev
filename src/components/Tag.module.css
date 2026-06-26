@@ -1,0 +1,22 @@
+.tag {
+    display: inline-flex; align-items: center; gap: var(--space-2);
+    font-family: var(--font-mono);
+    font-size: var(--text-xs);
+    letter-spacing: 0.02em;
+    padding: 0.3rem 0.7rem;
+    border-radius: var(--radius-pill);
+    background: var(--_bg, var(--sand-200));
+    color: var(--_fg, var(--ink-700));
+    border: var(--border-width) solid var(--_bd, transparent);
+    white-space: nowrap;
+}
+
+.peach { --_bg: var(--peach-soft); --_fg: var(--peach-ink); }
+.mint { --_bg: var(--mint-soft); --_fg: var(--mint-ink); }
+.butter { --_bg: var(--butter-soft); --_fg: var(--butter-ink); }
+.lavender { --_bg: var(--lavender-soft); --_fg: var(--lavender-ink); }
+.sky { --_bg: var(--sky-soft); --_fg: var(--sky-ink); }
+.neutral { --_bg: var(--sand-200); --_fg: var(--ink-700); }
+.outline { --_bg: transparent; --_fg: var(--ink-900); --_bd: var(--ink-900); }
+
+.dot { width: 0.5rem; height: 0.5rem; border-radius: 999px; background: currentColor; }

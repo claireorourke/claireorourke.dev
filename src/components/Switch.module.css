@@ -1,0 +1,25 @@
+.switch { display: inline-flex; align-items: center; gap: var(--space-3); cursor: pointer; }
+.switch input { position: absolute; opacity: 0; width: 0; height: 0; }
+
+.track {
+    position: relative; width: 3rem; height: 1.7rem; flex: none;
+    background: var(--sand-200);
+    border: var(--border-width-bold) solid var(--ink-900);
+    border-radius: var(--radius-pill);
+    transition: background var(--dur-base) var(--ease-out);
+}
+
+.thumb {
+    position: absolute; top: 50%; left: 0.2rem; transform: translateY(-50%);
+    width: 1.15rem; height: 1.15rem; border-radius: 999px;
+    background: var(--surface-card);
+    border: var(--border-width) solid var(--ink-900);
+    transition: left var(--dur-base) var(--ease-spring);
+}
+
+.switch input:checked + .track { background: var(--mint); }
+.switch input:checked + .track .thumb { left: calc(100% - 1.35rem); }
+.switch input:focus-visible + .track { outline: var(--border-width-bold) solid var(--focus-ring); outline-offset: 2px; }
+.switch input:disabled + .track { opacity: 0.45; }
+
+.label { font-family: var(--font-body); color: var(--text-strong); font-size: var(--text-base); }

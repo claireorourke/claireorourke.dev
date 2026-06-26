@@ -1,0 +1,47 @@
+.btn {
+    --_bg: var(--accent);
+    --_fg: var(--on-accent);
+    --_bd: transparent;
+    display: inline-flex; align-items: center; justify-content: center;
+    gap: var(--space-2);
+    font-family: var(--font-display);
+    font-weight: var(--weight-medium);
+    line-height: 1;
+    border: var(--border-width-bold) solid var(--_bd);
+    background: var(--_bg);
+    color: var(--_fg);
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform var(--dur-fast) var(--ease-spring),
+        box-shadow var(--dur-fast) var(--ease-out),
+        background var(--dur-base) var(--ease-out);
+}
+.btn:focus-visible { outline: var(--border-width-bold) solid var(--focus-ring); outline-offset: 3px; }
+
+/* sizes */
+.sm { font-size: var(--text-sm); padding: 0.5rem 0.9rem; }
+.md { font-size: var(--text-base); padding: 0.7rem 1.25rem; }
+.lg { font-size: var(--text-md); padding: 0.9rem 1.6rem; }
+
+/* primary — coral sticker */
+.primary { --_bg: var(--accent); --_fg: var(--on-accent); box-shadow: var(--shadow-retro); }
+.primary:hover { --_bg: var(--accent-hover); transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--ink-900); }
+.primary:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--ink-900); }
+
+/* secondary — paper with ink outline sticker */
+.secondary { --_bg: var(--surface-card); --_fg: var(--text-strong); --_bd: var(--ink-900); box-shadow: var(--shadow-retro); }
+.secondary:hover { --_bg: var(--cream-100); transform: translate(-1px,-1px); box-shadow: 4px 4px 0 var(--ink-900); }
+.secondary:active { transform: translate(2px,2px); box-shadow: 1px 1px 0 var(--ink-900); }
+
+/* ghost — quiet */
+.ghost { --_bg: transparent; --_fg: var(--text-strong); --_bd: transparent; }
+.ghost:hover { --_bg: var(--cream-100); }
+.ghost:active { transform: scale(0.97); }
+
+.btn[disabled], .btn[aria-disabled="true"] {
+    cursor: not-allowed; opacity: 0.45; box-shadow: none; transform: none; pointer-events: none;
+}
+
+.block { width: 100%; }

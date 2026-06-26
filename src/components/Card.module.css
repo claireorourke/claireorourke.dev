@@ -1,0 +1,27 @@
+.card {
+    display: block; text-decoration: none; color: inherit;
+    background: var(--surface-card);
+    border-radius: var(--radius-lg);
+    padding: var(--space-5);
+}
+
+/* soft — ambient shadow, hairline border */
+.soft { border: var(--border-width) solid var(--border); box-shadow: var(--shadow-card); }
+
+/* sticker — the signature ink outline + hard offset shadow */
+.sticker { border: var(--border-width-bold) solid var(--ink-900); box-shadow: var(--shadow-retro); }
+
+/* plain — flat, just a fill */
+.plain { border: var(--border-width) solid var(--border); }
+
+/* tinted grounds */
+.peach { background: var(--peach-soft); }
+.mint { background: var(--mint-soft); }
+.butter { background: var(--butter-soft); }
+.lavender { background: var(--lavender-soft); }
+.sky { background: var(--sky-soft); }
+
+/* interactive lift */
+.link { cursor: pointer; transition: transform var(--dur-base) var(--ease-spring), box-shadow var(--dur-base) var(--ease-out); }
+.link.sticker:hover { transform: translate(-2px,-2px); box-shadow: 6px 6px 0 var(--ink-900); }
+.link.soft:hover { transform: translateY(-3px); box-shadow: var(--shadow-pop); }
